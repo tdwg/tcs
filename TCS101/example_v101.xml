@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataSet 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.tdwg.org/schemas/tcs/1.01
+    http://tdwg.napier.ac.uk/TCS_1.01/v101.xsd"
+    xmlns="http://www.tdwg.org/schemas/tcs/1.01">
+    <!-- This is an instance document that tests as many different
+    applications of the schema as possible within a single document.
+    It is not meant to a 'realistic' example of a real data set
+    but a illustration of all the different types of data that can 
+    be passed. -->
+    <MetaData>
+        <!-- to be completed -->
+        <Simple />
+    </MetaData>
+    <Specimens>
+        <Specimen id="2">
+            <Simple />
+            <Institution identifier="" />
+            <Collection identifier="LE"/>
+            <SpecimenItem identifier=""/>
+        </Specimen>
+    </Specimens>
+    <Publications>
+        <Publication id="1">
+            <Simple>Fl. SSR</Simple>
+        </Publication>
+        <Publication id="2">
+            <Simple>Copeland, H.F. (1943). A study, anatomical and taxonomic, of the
+                genera of Rhododendroideae. Am. Midl.Nat. 30:533-625</Simple>
+        </Publication>
+        <Publication id="3">
+            <Simple>Wilson, E.H. &amp; Rehder, A. (1921). A monograph of the azaleas.
+                Publication of the Arnold Arboretum No. 9 Harvard University, Cambridge
+            MA.</Simple>
+        </Publication>
+        <Publication id="4">
+            <Simple>Judd, W.S. &amp; Kron, K.A. (1995) A Revision of Rhododendron VI
+                Edinb. J. Bot. 52(1): 1-54</Simple>
+        </Publication>
+        <Publication id="5">
+            <Simple>Maximoxicz, C.J. (1870) Rhododendron schlippenbachii. Mem. Acad. Sci.
+                St Petersbourg. ser.3 15.</Simple>
+        </Publication>
+    </Publications>
+    <TaxonNames>
+        <TaxonName id="0" nomenclaturalCode="Botanical">
+            <Simple>Rhododendron</Simple>
+        </TaxonName>
+        <TaxonName nomenclaturalCode="Botanical" id="1">
+            <Simple>Rhododendron subgenus Pentanthera (G. Don) Poyarkova</Simple>
+            <CanonicalName>
+                <Simple>Rhododedron subgenus Pentanthera</Simple>
+                <Genus>Rhododendron</Genus>
+                <InfragenericEpithet>Pentanthera</InfragenericEpithet>
+            </CanonicalName>
+            <CanonicalAuthorship>
+                <Simple>(G.Don) Poyarkova</Simple>
+                <BasionymAuthorship>
+                    <Simple>G. Don</Simple>
+                    <Authors>
+                        <AgentName>G. Don</AgentName>
+                    </Authors>
+                </BasionymAuthorship>
+                <CombinationAuthorship>
+                    <Simple>Poyarkova</Simple>
+                    <Authors>
+                        <AgentName>Poyarkova</AgentName>
+                    </Authors>
+                </CombinationAuthorship>
+            </CanonicalAuthorship>
+            <PublishedIn ref="1">Fl. SSR Vol 18 (1952)</PublishedIn>
+            <MicroReference>Page 57</MicroReference>
+            <Typification>
+                <Simple>Rhododendron flavum G.Don</Simple>
+                    <!--
+                        N.B. This could be linked to a full name entry if
+                        required but no details are in the current monograph so
+                        it isn't
+                    -->
+                <TypeName />
+            </Typification>
+        </TaxonName>
+        <TaxonName id="2" nomenclaturalCode="Botanical">
+            <Simple>Rhododendron sect. Sciadorhodion Rehder &amp; Wilson</Simple>
+            <CanonicalName>
+                <Simple>Rhododendron sect. Sciadorhodion</Simple>
+                <Genus>Rhododendron</Genus>
+                <InfragenericEpithet>Sciadorhodion</InfragenericEpithet>
+            </CanonicalName>
+            <CanonicalAuthorship>
+                <Simple>Rehder &amp; Wilson</Simple>
+                <BasionymAuthorship>
+                    <Simple>Rehder &amp; Wilson</Simple>
+                </BasionymAuthorship>
+            </CanonicalAuthorship>
+            <PublishedIn linkType="local" ref="3">Wislon &amp; Rehder Monogr. Azaleas 79 (1921)</PublishedIn>
+            <MicroReference>Page 79</MicroReference>
+            <Typification>
+                <Simple />
+                <TypeName>
+                    <NameReference linkType="local" ref="3">Rhododendron quinquefolium Bisset
+                        &amp; Moore</NameReference>
+                    <LectotypePublication ref="2">Copeland, H.F.(1943)</LectotypePublication>
+                </TypeName>
+            </Typification>
+            <Basionym>
+                <RelatedName ref="4">Azalea subgen. Sciadorhodion (Rhehder &amp; Wilson)
+                    Copeland</RelatedName>
+            </Basionym>
+        </TaxonName>
+        <TaxonName id="3" nomenclaturalCode="Botanical">
+            <Simple>Rhododendron quinquefolium Bisset &amp; Moore</Simple>
+        </TaxonName>
+        <TaxonName id="4" nomenclaturalCode="Botanical">
+            <!-- for brevity this NameObject isn't fully expanded -->
+            <Simple>Azalea subgen. Sciadorhodion (Rhehder &amp; Wilson) Copeland </Simple>
+            <Basionym>
+                <RelatedName ref="2">Rhododendron sect. Sciadorhodion Rehder &amp;
+                Wilson</RelatedName>
+            </Basionym>
+        </TaxonName>
+        <TaxonName id="5" nomenclaturalCode="Botanical">
+            <Simple>Rhododendron schlippenbachii Maxim.</Simple>
+            <Rank code="sp">Species</Rank>
+            <CanonicalName>
+                <Simple>Rhododendron schlippenbachii</Simple>
+                <Genus>Rhododendron</Genus>
+                <SpecificEpithet>schlippenbachii</SpecificEpithet>
+            </CanonicalName>
+            <CanonicalAuthorship>
+                <Simple>Maxim.</Simple>
+                <BasionymAuthorship>
+                    <Simple>Maxim.</Simple>
+                    <Authors>
+                        <AgentName>Maximoxicz, C.J.</AgentName>
+                    </Authors>
+                </BasionymAuthorship>
+            </CanonicalAuthorship>
+            <PublishedIn ref="5">Bull. Acad. Sci. St Petersbourg, ser. 3 15 (1870)</PublishedIn>
+            <MicroReference>Page 226</MicroReference>
+            <Typification>
+                <Simple />
+                <TypeVouchers>
+                <TypeVoucher typeOfType="lecto">
+                    <VoucherReference linkType="local" ref="1"/>
+                    <LectotypePublication ref="4"/>
+                    <LectotypeMicroReference>Page 15</LectotypeMicroReference>
+                </TypeVoucher>
+                <TypeVoucher typeOfType="isolecto">
+                    <VoucherReference linkType="local" ref="2"/>
+                    <LectotypePublication ref="4"/>
+                    <LectotypeMicroReference>Page 15</LectotypeMicroReference>
+                </TypeVoucher>
+                </TypeVouchers>
+            </Typification>
+        </TaxonName>
+        <TaxonName id="6" nomenclaturalCode="Botanical">
+            <Simple>Azalea schlippenbachii (Maxim.) Kuntze</Simple>
+            <CanonicalName>
+                <Simple>Azalea schlippenbachii</Simple>
+                <Genus>Azalea</Genus>
+                <SpecificEpithet>schlippenbachii</SpecificEpithet>
+            </CanonicalName>
+            <CanonicalAuthorship>
+                <Simple>(Maxim.) Kuntze</Simple>
+                <BasionymAuthorship>
+                    <Simple>Maxim.</Simple>
+                </BasionymAuthorship>
+                <CombinationAuthorship>
+                    <Simple>Kuntze</Simple>
+                </CombinationAuthorship>
+            </CanonicalAuthorship>
+            <PublishedIn>Revis. Gen.Pl. 2:387 (1891)</PublishedIn>
+            <Typification>
+                <Simple />
+                <TypeVouchers>
+                <TypeVoucher typeOfType="lecto">
+                    <VoucherReference ref="2">[Russia] Manchuria, shores of Possiet Bay, [SW of
+                        Vladivostok], 1860, C. Maximowicz LE</VoucherReference>
+                    <LectotypePublication ref="4"/>
+                    <LectotypeMicroReference>Page 15</LectotypeMicroReference>
+                </TypeVoucher>
+               </TypeVouchers>
+            </Typification>
+        </TaxonName>
+        <TaxonName id="7" nomenclaturalCode="Botanical">
+            <Simple>Rhododendron pentaphyllum Maxim.</Simple>
+            <CanonicalName>
+                <Simple>Rhododendron pentaphyllum</Simple>
+                <Genus>Rhododendron</Genus>
+                <SpecificEpithet>pentaphyllum</SpecificEpithet>
+            </CanonicalName>
+            <CanonicalAuthorship>
+                <Simple>Maxim.</Simple>
+            </CanonicalAuthorship>
+            <PublishedIn>Bull. Acad. Sci. St Petersbourg, ser. 3, 31:65 (1887)</PublishedIn>
+            <Typification>
+                <Simple />
+                <TypeVouchers>
+                    <TypeVoucher typeOfType="holo">
+                        <VoucherReference>Japan, Kyushiu, prov. Osumi, summit, Mt Taka-kuma, Tashiro
+                            (LE)</VoucherReference>
+                    </TypeVoucher>
+                </TypeVouchers>
+           
+            </Typification>
+        </TaxonName>
+        <TaxonName id="8" nomenclaturalCode="Botanical">
+            <Simple>Azalea pentaphylla (Maxim.) Copeland</Simple>
+            <CanonicalName>
+                <Simple>Azalea pentaphylla</Simple>
+                <Genus>Azalea</Genus>
+                <SpecificEpithet>pentaphylla</SpecificEpithet>
+            </CanonicalName>
+            <CanonicalAuthorship>
+                <Simple>(Maxim.) Copeland</Simple>
+                <BasionymAuthorship>
+                    <Simple>Maxim.</Simple>
+                </BasionymAuthorship>
+                <CombinationAuthorship>
+                    <Simple>Copeland</Simple>
+                </CombinationAuthorship>
+            </CanonicalAuthorship>
+            <PublishedIn>Am.Midl.Nat. 30:595 (1943)</PublishedIn>
+            <Typification>
+                <Simple />
+                <TypeVouchers>
+                    <TypeVoucher typeOfType="holo">
+                        <VoucherReference>Japan, Kyushiu, prov. Osumi, summit, Mt Taka-kuma, Tashiro
+                            (LE)</VoucherReference>
+                    </TypeVoucher>
+                </TypeVouchers>
+            </Typification>
+        </TaxonName>
+        <TaxonName id="9" nomenclaturalCode="Botanical">
+            <Simple>Rhododendron pentaphyllum var. nikoense Komatsu</Simple>
+            <Rank code="var">variety</Rank>
+            <CanonicalName>
+                <Simple>Rhododendron pentaphyllum var. nikoense</Simple>
+                <Genus ref="0">Rhododendron</Genus>
+                <SpecificEpithet>pentaphyllum</SpecificEpithet>
+                <InfraspecificEpithet>nikoense</InfraspecificEpithet>
+            </CanonicalName>
+            <CanonicalAuthorship>
+                <Simple>Konatsu</Simple>
+            </CanonicalAuthorship>
+            <PublishedIn>Icon. Pl. Koisikav. 3: 45, t 168 (1916)</PublishedIn>
+        </TaxonName>
+        <TaxonName id="10" nomenclaturalCode="Botanical">
+            <Simple>Rhododendron nikoense (Komatsu) Nakai</Simple>
+            <Rank code="sp">Species</Rank>
+            <CanonicalName>
+                <Simple>Rhododendron nikoense</Simple>
+                <Genus ref="0">Rhododendron</Genus>
+                <SpecificEpithet>nikoense</SpecificEpithet>
+            </CanonicalName>
+            <CanonicalAuthorship>
+                <Simple>(Komatsu) Nakai</Simple>
+                <BasionymAuthorship>
+                    <Simple>Komatsu</Simple>
+                </BasionymAuthorship>
+                <CombinationAuthorship>
+                    <Simple>Nakai</Simple>
+                </CombinationAuthorship>
+            </CanonicalAuthorship>
+            <PublishedIn>Nakai &amp; Koidz. Trees and Shrubs Japan 1: 68 (1922)</PublishedIn>
+            <Basionym>
+                <RelatedName ref="9">Rhododendron pentaphyllum var. nikoense</RelatedName>
+            </Basionym>
+        </TaxonName>
+        <TaxonName id="11" nomenclaturalCode="Botanical">
+            <Simple>Rhododendron quinquefolium Bisset &amp; S. Moore var. roseum Rehder</Simple>
+            <Rank code="var">variety</Rank>
+            <CanonicalName>
+                <Simple>Rhododendron quinquefolium</Simple>
+                <Genus ref="0">Rhododendron</Genus>
+                <SpecificEpithet>quinquefolium</SpecificEpithet>
+                <InfraspecificEpithet>roseum</InfraspecificEpithet>
+            </CanonicalName>
+            <CanonicalAuthorship>
+                <Simple>Rehder</Simple>
+            </CanonicalAuthorship>
+            <PublishedIn>Bailey, Stand. Cycl. Hort. 5: 2947 (1916)</PublishedIn>
+        </TaxonName>
+        <TaxonName id="12" nomenclaturalCode="Botanical">
+            <Simple>Rhododendron pentaphyllum Maxim. var. shikokianum T. Yamazaki</Simple>
+            <Rank code="sp">species</Rank>
+            <CanonicalName>
+                <Simple>Rhododendron pentaphyllum var. shikokianum</Simple>
+                <Genus ref="0">Rhododendron</Genus>
+                <SpecificEpithet>pentaphyllum</SpecificEpithet>
+                <InfraspecificEpithet>shikokianum</InfraspecificEpithet>
+            </CanonicalName>
+            <CanonicalAuthorship>
+                <Simple>T. Yamazaki</Simple>
+            </CanonicalAuthorship>
+            <PublishedIn>Jap. Bot. 63: 312 (1988)</PublishedIn>
+        </TaxonName>
+    </TaxonNames>
+    <TaxonConcepts>
+        <TaxonConcept id="1">
+            <Name scientific="true" linkType="local" ref="2">Rhododendron sect. Sciadorhodion Rehder
+                &amp; Wilson</Name>
+            <Rank code="sect">Section</Rank>
+            <AccordingTo>
+                <Simple>Judd &amp; Kron (1995)</Simple>
+                <AccordingToDetailed>
+                    <PublishedIn linkType="local" ref="4">Judd &amp; Kron (1995) A Revision of
+                        Rhododendron VI </PublishedIn>
+                    <MicroReference>Page 13-14</MicroReference>
+                </AccordingToDetailed>
+            </AccordingTo>
+            <TaxonRelationships>
+                <TaxonRelationship type="is parent taxon of">
+                    <ToTaxonConcept linkType="local" ref="2"/>
+                </TaxonRelationship>
+            </TaxonRelationships>
+        </TaxonConcept>
+        <TaxonConcept id="2">
+            <Name scientific="true" linkType="local" ref="5">Rhododendron schlippenbachii Maxim.</Name>
+            <AccordingTo>
+                <Simple>Judd &amp; Kron (1995)</Simple>
+                <AccordingToDetailed>
+                    <PublishedIn linkType="local" ref="4"/>
+                    <MicroReference>Page 15</MicroReference>
+                </AccordingToDetailed>
+            </AccordingTo>
+            <TaxonRelationships>
+                <TaxonRelationship type="is child taxon of">
+                    <ToTaxonConcept ref="1">Rhododendron sect. Sciadorhodion Rehder &amp;
+                    Wilson</ToTaxonConcept>
+                </TaxonRelationship>
+            </TaxonRelationships>
+        </TaxonConcept>
+        <TaxonConcept id="3">
+            <Name scientific="true" ref="6">Azalea schlippenbachii (Maxim.) Kuntze</Name>
+            <AccordingTo>
+                <Simple>Kuntze (1891)</Simple>
+            </AccordingTo>
+            <TaxonRelationships>
+                <TaxonRelationship type="is congruent to">
+                    <ToTaxonConcept ref="2"/>
+                </TaxonRelationship>
+            </TaxonRelationships>
+        </TaxonConcept>
+        <TaxonConcept id="4">
+            <Name scientific="true" ref="7">Rhododendron pentaphyllum Maxim.</Name>
+            <AccordingTo>
+                <Simple>Judd &amp; Kron (1995)</Simple>
+            </AccordingTo>
+            <TaxonRelationships>
+                <!-- relationships linking to taxonconcept without any descriptive string -->
+                <TaxonRelationship type="has synonym">
+                    <ToTaxonConcept ref="6"/>
+                </TaxonRelationship>
+                <TaxonRelationship type="has synonym">
+                    <ToTaxonConcept ref="7"/>
+                </TaxonRelationship>
+                <!-- relationship with linking reference to another taxon concept and string description of concept -->
+                <TaxonRelationship type="has synonym">
+                    <ToTaxonConcept ref="8">Rhododendron pentaphyllum var. nikoense
+                    Komatsu</ToTaxonConcept>
+                </TaxonRelationship>
+                <!-- relationships without linking -->
+                <TaxonRelationship type="has synonym">
+                    <ToTaxonConcept>Rhododendron pentaphyllum Maxim. var. shikokianum T.
+                    Yamazaki</ToTaxonConcept>
+                </TaxonRelationship>
+                <TaxonRelationship type="has synonym">
+                    <ToTaxonConcept>Rhododendron quinquefolium Bisset &amp; S. Moore var. roseum
+                        Rehder</ToTaxonConcept>
+                </TaxonRelationship>
+            </TaxonRelationships>
+        </TaxonConcept>
+        <TaxonConcept id="6">
+            <Name scientific="true">Rhododendron nikoense (Komatsu) Nakai</Name>
+        </TaxonConcept>
+        <TaxonConcept id="7">
+            <Name scientific="true" ref="10">Rhododendron nikoense (Komatsu) Nakai</Name>
+        </TaxonConcept>
+        <TaxonConcept id="8">
+            <Name scientific="true" ref="9">Rhododendron pentaphyllum var. nikoense Komatsu</Name>
+        </TaxonConcept>
+    </TaxonConcepts>
+</DataSet>
